@@ -1,0 +1,369 @@
+/* box sizing */
+
+* {
+    /* Setting the box sizing as below includes any padding or margins when calculating the height of an element. */
+    box-sizing: border-box;
+}
+
+/* element styling (e.g. standard p, h1, h2, a, etc) */
+
+h1, h2, h3 {
+    font-family: "IBM Plex Sans", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.2em;
+    padding: 0 15px 0 15px
+}
+
+p a {
+    color: #000000;
+}
+
+p a:hover {
+    color: #942a3c;
+}
+
+html {
+    /* This adds an animation when a link to a section on the webpage is clicked. I got information on this from https://www.w3schools.com/cssref/pr_scroll-behavior.asp */
+    scroll-behavior: smooth;
+}
+
+hr {
+    /* This tells the browser to make the line 90% of the width of the viewport. */
+    max-width: 90%;
+    border: 0;
+    height: 1px;
+    background: #333;
+    /* This sets the background image of the line to a gradient. It starts off on the left as a light-grey colour, becomes darker towards the middle and then ends at the right as the original light-grey colour. */
+    /* I used https://css-tricks.com/examples/hrs/ to obtain sample CSS to create the HRs in this way. */
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin-top: 60px;
+}
+
+body {
+    background: #e6e6e6;
+    /* This ensures that the body of the webpage sticks tightly to the top, left, bottom and right of the browser window. */
+    margin: 0 0 0 0;
+    font-family: "IBM Plex Serif", serif;
+}
+
+/* navigation styles */
+
+.page-nav {
+    text-align: center;
+    /* The below two lines make the navbar stay at the top of the page when you scroll down so you always have easy access to it without needing to scroll back to the top. */
+    /* I used some information from https://www.w3schools.com/css/css_navbar_horizontal.asp to style the navbar */
+    position: -webkit-sticky;
+    position: sticky;
+    /* This ensures there is no space between the navbar and what is above it, eg the header or the top of the browser window */
+    top: 0;
+    /* This creates two  drop shadow effects at the bottom of the navbar. They are black with 20% opacity. In this case, I have chosen a shadow that extends down 4px and has a blur effect, and another than extends down 6px with a stronger blur effect. */
+    /* I got information on shadows from https://www.w3schools.com/css/css3_shadows_box.asp */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #062845;
+}
+
+.page-nav li {
+    /* This makes each of the list elements display on the same line, rather than each being on a separate line. */
+    display: inline;
+}
+
+.page-nav li a {
+    /* This makes the navigation links display on the same line, but also enabled their height to be changed */
+    display: inline-block;
+    color: #D6C3A0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.page-nav li a:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #57647A;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 22px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* page header styles*/
+
+header {
+    background-image: url("../images/header-bg-2.png");
+    background-color: #942a3c;
+    padding-top: 50px;
+    margin-bottom: 0;
+    /* This ensures that the header element will always be at least 600 pixels high. */
+    min-height: 600px;
+    /* This stops the background from repeating, i.e. displaying the same image multiple times to fill up the available space. */
+    background-repeat: no-repeat;
+    /* This stretches out the background image so that it fills up the entire space. */
+    background-size: cover;
+    /* This places the background image in the centre of the header section */
+    background-position: center;
+}
+
+.header-content img {
+    /* This enables the profile picture to be positioned above the name h1, instead of beside it. */
+    display: block;
+    /* This makes the image appear circular by setting the radius of each of its corners equal to half of the length of each side. */
+    border-radius: 50%;
+    /* The below two lines ensure the image always stays in the centre. */
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.4), 0 12px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+header p, h1 {
+    text-align: center;
+    color: white;
+}
+
+header p {
+    padding: 40px;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+/* styling for the section content */
+
+section {
+    /* This ensures that each section will never grow larger than 1200px (and thus will not look really wide on high-res displays. It also ensures each section is centered. */
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about img {
+    display: inline-block;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 15px;
+}
+
+#about img:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 22px 0 rgba(0, 0, 0, 0.5);
+}
+
+#about .social {
+    text-align: center;
+}
+
+/* I used information from https://www.w3schools.com/howto/howto_css_portfolio_gallery.asp to assist me in displaying the work experience and image gallery sections below. */
+
+#work .column-small {
+    /* This makes each of the columns have a width of 25% of the  width of the viewport and floats it (makes it align) to the left. */
+    float: left;
+    width: 25%;
+}
+
+#images .column-small {
+    float: left;
+    width: 33.33%;
+}
+
+.row {
+    margin: 8px -16px;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-large {
+    float: left;
+    width: 50%;
+}
+
+.row>.column-small, .column-large {
+    /* This applies padding of 8px on all sides to both the small and large column styles. */
+    padding: 8px;
+}
+
+.row:after {
+    /* This clears the float properties after the row. */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.content img {
+    border-radius: 12px;
+    width: 100%;
+}
+
+#images img:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #57647A;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.5), 0 10px 22px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 900px) {
+    /* This adjusts the widths of the columns based on the viewport's current width. In this case, the adjustments will apply once the width of the viewport is less than 900 pixels and greater than 600 pixels. */
+    #work .column-small {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #work .column-small, .column-large {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #images .column-small, .column-large {
+        width: 100%;
+    }
+}
+
+/* form styling */
+
+/* I got information on styling the text fields from https://www.w3schools.com/css/css_form.asp */
+
+#contact input {
+    /* This prevents the standard style for input elements overriding custom styles. */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.button {
+    text-align: center;
+}
+
+#contact input[type=submit] {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 1.2em;
+    padding: 15px 32px;
+    background-color: #062845;
+    color: #D6C3A0;
+    border: 2px solid #D6C3A0;
+    /* This gives the button rounded corners. */
+    border-radius: 8px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+#contact input[type=submit]:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.4), 0 8px 20px 0 rgba(0, 0, 0, 0.4);
+    /* This sets the cursor to the pointing hand instead of the arrow. */
+    cursor: pointer;
+}
+
+#contact input[type="text"], input[type="email"], input[type="tel"] {
+    background-color: inherit;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    /* This stops the browser placing a blue outline around the input field. */
+    outline: none;
+    border-bottom: 2px solid #062845;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8em;
+}
+
+#contact input[type="text"]:hover, input[type="email"]:hover, input[type="tel"]:hover {
+    /* This animates the changing of the background from white to light grey. */
+    /* I got information about adding the animation from https://www.w3schools.com/cssref/css3_pr_transition.asp */
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #e6e6e6;
+}
+
+#contact input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus {
+    /* This animates the changing of the background from white to light grey. */
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #e6e6e6;
+    border-bottom: 2px solid red;
+}
+
+#contact textarea {
+    padding: 12px;
+    width: 100%;
+    background-color: inherit;
+    border: 2px solid #062845;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8em;
+}
+
+#contact textarea:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #e6e6e6;
+}
+
+#contact textarea:focus {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: white;
+    border: 2px solid red;
+}
+
+#contact .content {
+    margin-bottom: 20px;
+}
+
+/* footer styling */
+
+footer {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background-color: #062845;
+    color: #D6C3A0;
+}
+
+footer p {
+    padding: 20px;
+}
+
+footer a {
+    color: #D6C3A0;
+}
+
+footer a:hover {
+    color: #a5977d;
+}

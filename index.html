@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Scott Brady portfolio" />
+    <!-- meta tag below is used for Internet Explorer and mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--This means that the browser will (probably) render the width of the page at the width of its own screen. //-->
+    <title>Scott Brady</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Serif">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/layout.css" />
+</head>
+
+<!-- all the classes below will require some CSS styles to be included in your layout.css file, if you do not
+include a style for these classes you should remove the class from your html file //-->
+
+<body>
+    <main>
+        <header>
+            <!-- The header usually contains introductory content such as a page title or a logo. -->
+            <div class="header-content">
+                <!-- A div splits a HTML document up into different secions or divisions so that each section can be styled in the the CSS file -->
+                <img src="images/profile-photo.jpg" alt="image of Scott Brady" width="170" height="170">
+                <h1>Scott Brady</h1>
+                <p>iOS Developer 📱 &middot; Computer Science Student 🖥 &middot; Photographer 📸 </p>
+            </div>
+        </header>
+        <!-- You could style Main here if you wish-->
+        <nav class="page-nav">
+            <!-- the navigation part of the page.  Note links just jump to different parts of the page.-->
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">Work Experience</a></li>
+                <li><a href="#images">Image Gallery</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <!--Note here the use of an ID.  the link above actually links to this.  It's a good example of where an ID can be used.  Note also that the section has a class attribute.  use this for styling. -->
+        <section id="about">
+            <!-- A section allows you to split the document up into different parts, each with a different purpose or different content. In this case, it signifies a section that is dedicated to being about me as a person.-->
+            <h2>- About Me -</h2>
+            <div class="content">
+                <!-- add your 150 word maximum About Me content here.  Use HTML you know, marks for the HTML.  Marks deducted for poor grammar, spelling errors etc. -->
+                <p>
+                    I’m Scott Brady, a 19-year-old student studying Computer Applications at <a
+                        href="https://www.dcu.ie/courses/undergraduate/school-computing/computer-science"
+                        target="blank">Dublin City University (DCU)</a> in Dublin, Ireland. I’m interested in
+                    computer programming, and built my first iOS app when I was in second year of Secondary School,
+                    at age 15. I also have a huge passion for photography and spend lots of my spare time taking
+                    photographs, both on my iPhone and my DSLR camera. Be sure to check out some of my shots
+                    in the <a href="#images">image gallery below!</a>
+                </p>
+                <p>
+                    If you're interested in seeing more of my photography, I encourage you to check out my social media
+                    profiles where I post regularly. You can find these linked below.
+                </p>
+                <div class="social">
+                    <!-- Icons are free for commercial use from xhttps://www.iconfinder.com/icons/5296516/tweet_twitter_twitter_logo_icon -->
+                    <a href="https://www.instagram.com/scottbrady_2001/" target="blank"><img src="images/instagram.png"
+                            alt="logo of Instagram"></a>
+                    <a href="https://twitter.com/scottbrady_2001" target="blank"><img src="images/twitter.png"
+                            alt="logo of Twitter"></a>
+                    <a href="https://www.reddit.com/user/scottyboi_2014" target="blank"><img src="images/reddit.png"
+                            alt="logo of Reddit"></a>
+                </div>
+
+            </div>
+        </section>
+
+        <br>
+        <hr>
+
+        <section id="work">
+            <div class="container-content">
+                <h2>- Work Experience -</h2>
+                <!-- add your 200 word maximum work experience content here.  You can use lists of things as well as paragraphs.  Show off the HTML you know.  marks for the HTML, and how well you use it. marks deducted for poor grammar or spelling errors-->
+                <p>Below, you can take a look at some of my work experience over the past few years.</p>
+                <div class="row">
+                    <div class="column-large">
+                        <div class="content">
+                            <a href="https://www.lansdowneplace.ie" target="blank"><img
+                                    src="images/newlough-image-2.jpg" alt="image of construction site"></a>
+                            <h3>Newlough Joinery</h3>
+                            <p>
+                                I worked on the consutruction of over 200 luxury apartments in Ballsbridge, Dublin 4
+                                during summer 2020. As part of this job, I
+                                carried out a variety of duties including cleaning, transporting materials and tools and
+                                basic carpentry tasks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column-large">
+                        <div class="content">
+                            <!-- Image source: https://www.rocdesign.ie/home-pages/roc-designs -->
+                            <a href="https://www.funtasia.ie" target="blank"><img src="images/funtasia-logo-copy.png"
+                                    alt="logo of Funtasia"></a>
+                            <h3>Funtasia Waterpark Drogheda</h3>
+                            <p>
+                                I worked here during summer 2019 as an instructor on the Skyclimb, Zipline and
+                                Climbing Wall activities, and occasionally attended to the gift shop, delivering the
+                                highest level of customer service at all times.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    During Transition Year, I also got plenty of opportunities to get hands-on experience in a variety
+                    of workplaces. Some of these are detailed below.
+                </p>
+
+                <div class="row">
+                    <div class="column-small">
+                        <div class="content">
+                            <!-- Image source: https://commons.wikimedia.org/wiki/File:SAP_2011_logo.svg [modified] -->
+                            <a href="https://www.sap.com/uk/about/careers/joining/locations/dublin-galway.html"
+                                target="blank"><img src="images/sap-logo.png" alt="logo of SAP"></a>
+                            <h3>SAP Ireland</h3>
+                            <p>
+                                I spent an action-packed week at SAP Dublin and took part in programming activities, CV
+                                workshops, robotics demonstrations, and developed many essential teamwork skills.
+                        </div>
+                    </div>
+                    <div class="column-small">
+                        <div class="content">
+                            <!-- Image source: taken by myself -->
+                            <a href="https://dublin.aero" target="blank"><img src="images/dublin-aerospace-image.jpg"
+                                    alt="image of Aer Lingus Airbus A320 in hangar"></a>
+                            <h3>Dublin Aerospace</h3>
+                            <p>
+                                As someone with a keen interest in aviation, I was lucky enough to get an opportunity to
+                                see aircraft such as the Boeing 737 and
+                                Airbus A320 undergoing maintenance up close in the hangars at Dublin Airport.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column-small">
+                        <div class="content">
+                            <!-- Image source: https://www.facebook.com/SVPIreland/ -->
+                            <a href="https://www.svp.ie/what-we-do/shops/vincent-s-north-road.aspx" target="blank"><img
+                                    src="images/svp-logo.png" alt="logo of St Vincent de Paul"></a>
+                            <h3>St Vincent de Paul</h3>
+                            <p>
+                                I spent a week working as a volunteer in my local St Vincent de Paul store in Drogheda.
+                                This was a fantastic opportunity to help out a local charity while gaining some
+                                experience for myself at the same time.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="column-small">
+                        <div class="content">
+                            <!-- Image source: https://commons.wikimedia.org/wiki/File:Badge_of_An_Garda_S%C3%ADochána.svg [modified] -->
+                            <a href="https://www.garda.ie/en/contact-us/station-directory/drogheda.html"
+                                target="blank"><img src="images/garda-logo.png" alt="logo of An Garda Síochána"></a>
+                            <h3>An Garda Síochána</h3>
+                            <p>
+                                I got to experience the work of a member of An Garda Síochána, and even got to pay a
+                                visit to the Garda Training College in Templemore, Co. Tipperary.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+
+        <section id="images">
+            <div class="container-content">
+                <h2>- Image Gallery -</h2>
+                <p>Below, I have chosen a few of my favourite photos that I've taken over the years to display. Please
+                    feel free click on any photo to view a larger version.</p>
+
+                <!-- I used information from https://www.w3schools.com/howto/howto_css_portfolio_gallery.asp to assist me in displaying the image gallery. -->
+                <div class="row">
+                    <div class="column-small">
+                        <div class="content">
+                            <a href="images/photo-4.jpeg" target="blank"><img src="images/photo-4-small.jpg"
+                                    alt="A silhouette of an ancient monument with people standing on it at sunset"></a>
+                            <h3>Hill of Slane Silhouette</h3>
+                            <p>This image was captured on a visit to the Hill of Slane, in Co. Meath, Ireland. In this
+                                image, I captued the silhouette of two of my friends as the sun was setting in the
+                                background.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-small">
+                        <div class="content">
+                            <a href="images/photo-1.jpeg" target="blank"><img src="images/photo-1-small.jpg"
+                                    alt="Looking up towards the top of the Brooklyn Bridge"></a>
+                            <h3>Brooklyn Bridge</h3>
+                            <p>This photo was taken while I was on a trip to New York in summer of 2018. I like how it
+                                showcases the beautiful symmetry of the bridge.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-small">
+                        <div class="content">
+                            <a href="images/photo-5.jpeg" target="blank"><img src="images/photo-5-small.jpg"
+                                    alt="A green shield bug sitting on a lupin flower"></a>
+                            <h3>Green Shield Bug</h3>
+                            <p>I discovered this curious insect while out exploring my garden, and captured him resting
+                                atop of a lupin flower.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-large">
+                        <div class="content">
+                            <a href="images/photo-2.jpeg" target="blank"><img src="images/photo-2-small.jpg"
+                                    alt="A coloured USA flag on a black-and-white background"></a>
+                            <h3>Stars & Stripes</h3>
+                            <p>This photo was also captured on my New York trip during a visit to Ellis Island. I like
+                                how the flag stands out against the black-and-white background.</p>
+                        </div>
+                    </div>
+
+                    <div class="column-large">
+                        <div class="content">
+                            <a href="images/photo-3.jpeg" target="blank"><img src="images/photo-3-small.jpg"
+                                    alt="Yellow taxis outside Radio City Music Hall on a black-and-white background"></a>
+                            <h3>Yellow Cabs</h3>
+                            <p>This image focuses on a New York icon: the yellow cab, and attention is drawn to the
+                                famous Radio City Music Hall.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <hr>
+
+        <section id="contact">
+            <div class="container-content">
+                <h2>- Contact Me -</h2>
+                <div class="content">
+                    <form action="https://formspree.io/scott.brady76@mail.dcu.ie" method="post">
+                        <!-- Style this nicely.  Don't worry if the form doesn't work, marks here for how well you style it. -->
+                        <p>
+                            Please fill in the contact form below and I'll get back to you as soon as I can!
+                        </p>
+
+                        <p>
+                            <label for="contact-name">Your name</label>
+                            <input id="contact-name" type="text" name="contact-name">
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email</label>
+                            <input id="contact-email" type="email" name="contact-email">
+                        </p>
+                        <p>
+                            <label for="contact-phone">Your phone number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone">
+                        </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5"></textarea>
+                        </p>
+                        <div class="button">
+                            <input type="submit" value="Send Message">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>
+                &copy; <a href="https://dcu.ie">DCU 2020</a>
+                <span class="footer-separator">&middot;</span>
+                <span class="footer-text">Scott Brady</span>
+                <span class="footer-separator">&middot;</span>
+                <span class="footer-text">This is student coursework</span>
+                <span class="footer-separator">&middot;</span>
+                <span class="footer-text">Lecturer:
+                    <a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a>
+                </span>
+                <span class="footer-separator">&middot;</span>
+                <span class="footer-text">
+                    <a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service">Valid
+                        HTML</a>
+                </span>
+            </p>
+        </footer>
+    </main>
+</body>
+
+</html>
